@@ -1,5 +1,6 @@
 package ru.gloomyana.tests;
 
+import io.qameta.allure.AllureId;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
@@ -10,6 +11,7 @@ import static io.qameta.allure.Allure.step;
 public class SteamWebTest extends TestBase {
 
     @Test
+    @AllureId("18615")
     @DisplayName("Проверка наличия кнопки загрузки клиента на сайте STEAM")
     @Tags({@Tag("major"), @Tag("web")})
     public void steamClientDownloadButtonShouldBeClickableTest() {
